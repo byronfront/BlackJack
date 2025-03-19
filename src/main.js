@@ -70,7 +70,8 @@ const acumularPuntos = (carta, turno) => {
 
 const crearCarta = (carta, turno) => {
   const imgCarta = document.createElement('img');
-  imgCarta.src = `../assets/cartas/${carta}.png` || `https://github.com/byronfront/BlackJack/tree/main/assets/cartas/${carta}.png`;
+  // imgCarta.src = `../assets/cartas/${carta}.png`;
+  imgCarta.src = `https://github.com/byronfront/BlackJack/tree/main/assets/cartas/${carta}.png`;
   imgCarta.classList.add('carta');
   divCartasJugadores[turno].append(imgCarta)
 };
